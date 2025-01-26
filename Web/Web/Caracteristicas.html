@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- meta tags de compatibilidad con diversas aplicaciones -->
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description"
+        content="Register for a machine learning workshop at our school for machines who can't learn good and want to do other stuff good too" />
+    <meta property="og:title" content="Machine Learning Workshop" />
+    <meta property="og:description"
+        content="School for Machines Who Can't Learn Good and Want to Do Other Stuff Good Too" />
+    <meta property="og:image" content="http://www.machinelearningworkshop.com/image/all.png" />
+    <meta property="og:image:alt"
+        content="Black and white line drawing of refrigerator, french door refrigerator, range, washer, fan, microwave, vaccuum, space heater and air conditioner" />
+    <meta name="twitter:title" content="Machine Learning Workshop" />
+    <meta name="twitter:description"
+        content="School for machines who can't learn good and want to do other stuff good too" />
+    <meta name="twitter:url" content="https://www.machinelearningworkshop.com/?src=twitter" />
+    <meta name="twitter:image:src" content="http://www.machinelearningworkshop.com/image/all.png" />
+    <meta name="twitter:image:alt" content="27 different home appliances" />
+    <meta name="twitter:creator" content="@estellevw" />
+    <meta name="twitter:site" content="@perfmattersconf" />
+    <link rel="stylesheet" src="css/styles.css" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="alternate" href="https://www.machinelearningworkshop.com/fr/" hreflang="fr-FR" />
+    <link rel="alternate" href="https://www.machinelearningworkshop.com/pt/" hreflang="pt-BR" />
+    <link rel="canonical" href="https://www.machinelearning.com" />
+    <link rel="manifest" href="/mlwmanifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta http-equiv="content-language" content="es-mx" />
+    <title>Introducción general sobre los pingüinos</title>
+
+    <!-- los # son por los id de cada elementos, miralos tu, no te los pienso indicar -->
+    <style>
+        #fontSyzeText {
+            font-family: "Roboto", serif;
+            font-style: normal;
+            font-size: 17px;
+            text-align: justify;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            padding-right: 10px;
+        }
+
+        #fontSyzeTitle {
+            font-size: 25px;
+            font-family: "Roboto", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 2px solid black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+
+        td {
+            border: 2px solid black;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 1200px;
+            height: 700px;
+        }
+
+        body {
+            background: rgb(255, 255, 255);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #table-01 {
+            border-left: 10px solid white;
+            border-right: 10px solid white;
+            border-collapse: separate;
+        }
+
+
+        #table-01 th,
+        #table-01 td {
+            color: rgb(0, 0, 0);
+            border: 1px solid rgb(0, 0, 0);
+            padding: 8px;
+            text-align: left;
+        }
+
+        #tableTitle th {
+            color: rgb(0, 0, 0);
+            font-family: "Kanit", serif;
+            font-weight: 400;
+        }
+
+        #whiteText {
+            color: rgb(107, 94, 94);
+        }
+
+        #pingui {
+            width: 250px;
+            height: 100px;
+            margin: 10px;
+            float: left;
+            border: 2px solid black;
+        }
+
+        #title1 {
+            text-align: left;
+            margin: 0;
+            padding-left: 10px;
+
+        }
+
+        .navbar {
+            justify-content: flex-start;
+        }
+
+        #buttonNavbar {
+            border: 2px solid black;
+        }
+
+        #card1 {
+            text-align: left;
+            margin: 0 auto;
+            display: flex;
+            padding: 20px;
+            color: #866737;
+        }
+
+        #fontSCard1 {
+            font-size: 20px;
+        }
+
+        #fontSDescription {
+            font-size: 20px;
+            text-align: justify;
+            padding: 30px;
+        }
+
+        #fontSyzeTableElements {
+            font-size: 15px;
+            font-family: "Libre Baskerville", serif;
+            font-style: normal;
+        }
+
+        #carouselExample {
+            width: 75%;
+            margin: 0 auto;
+            border-left: 1px solid rgb(255, 255, 255);
+            border-right: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            border: solid black;
+        }
+
+        .navbar-brand {
+            flex: 11.5;
+            text-align: center;
+            font-family: "Libre Baskerville", serif;
+            font-style: normal;
+            color: solid black;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #title01 {
+            font-family: "Roboto", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 200%;
+            color: white;
+
+        }
+
+        #title02 {
+            font-family: "Roboto", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 200%;
+            color: white;
+        }
+
+        #mini {
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        #boton1 {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            padding: 15px 30px;
+            text-align: center;
+        }
+
+        #boton1 .btn {
+            color: #fff;
+        }
+
+        #boton2 {
+            display: block;
+            width: 170%;
+            padding: 15px 30px;
+        }
+
+        #logos {
+            width: 70px;
+            height: 70px;
+            margin: 10px;
+            float: left;
+        }
+
+        #margenTotal {
+            width: 100%;
+            border-left: 100px solid rgb(0, 0, 0);
+            border-right: 100px solid rgb(0, 0, 0);
+            padding: 10px;
+
+        }
+    </style>
+    <!-- se intento vincular con el css pero hay algunas cosas que no se quedan igual
+    <link rel="stylesheet" href="css/Styles.css"> -->
+
+
+</head>
+
+<body id="margenTotal">
+    <nav class="navbar navbar-expand-lg" style="background-color: #ffd000;" id="navbarcolor">
+        <div class="container-fluid d-flex justify-content-start">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/982/267/non_2x/simple-penguin-logo-vector.jpg" class="img" id="pingui">
+            <a class="navbar-brand"><strong id="title01">Caracteristicas generales:</strong></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mas informacion
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Inicio.html">Inicio</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Caracteristicas.html">Caracteristicas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="InfoDetalle.html">Informacion detallada</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Especies.html">Especies de pingüinos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <h1></h1>
+
+    <img src="https://www.plataformacostera.org/web/wp-content/uploads/2023/02/inicio_img_1-18.jpg"
+        class="d-block w-100" alt="img">
+    <p></p>
+    <h1 id="mini">Elaboracion no profesional, realizado por motivo de estudio.</h1>
+    <hr>
+    <h1 id="fontSyzeTitle">Caracteristicas generales</h1>
+    <p id="fontSyzeText">Este es un apartado de prueba así que
+        <strong>no espere demasiado del contenido</strong>
+        que se pueda llegar a mostrar en esta página.
+    </p>
+<hr>
+    <div class="card" style="width: 26rem;" id="card1">
+        <div class="card-body">
+            <h1 id="fontSyzeTitle">Caracteristicas generales:</h1>
+            <hr>
+            <ul>
+                <li id="fontSyzeText"><strong>Nombre común:</strong> Pingüinos.
+                </li>
+                <li id="fontSyzeText"><strong>Nombre científico:</strong> Spheniscidae.
+                </li>
+                <li id="fontSyzeText"><strong>Dieta:</strong> Carnívora.
+                </li>
+                <li id="fontSyzeText"><strong>Nombre del grupo:</strong> Colonia.
+                </li>
+                <li id="fontSyzeText"><strong>Promedio de vida:</strong> 10 - 20 años.
+                </li>
+                <li id="fontSyzeText"><strong>Tamaño:</strong> 38 - 114 centímetros.
+                </li>
+                <li id="fontSyzeText"><strong>Peso:</strong> 1- 40 kilos.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <nav class="navbar navbar-expand-lg" style="background-color: #ffd000;" id="navbarcolor">
+        <div class="container-fluid d-flex justify-content-start">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/982/267/non_2x/simple-penguin-logo-vector.jpg" class="img" id="pingui" alt="Pingui">
+            <a href="https://www.facebook.com">
+                <img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" class="img" id="logos" alt="Facebook"
+                    style="cursor: pointer;">
+            </a>
+            <a href="https://x.com">
+                <img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" class="img" id="logos"
+                    alt="Instagram" style="cursor: pointer;">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" class="img" id="logos" alt="GitHub"
+                    style="cursor: pointer;">
+            </a>
+            <a href="https://www.youtube.com">
+                <img src="https://cdn-icons-png.flaticon.com/128/4494/4494487.png" class="img" id="logos" alt="TikTok"
+                    style="cursor: pointer;">
+            </a>
+            <a class="navbar-brand"><strong id="title02">Cuidemos a los pinguinos</strong></a>
+        </div>
+        </div>
+    </nav>
+
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
