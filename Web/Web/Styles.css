@@ -1,169 +1,196 @@
-/* se queda en comentarios, porque no se terminan de vincular con el otro html
-        #fontSyzeText {
-            font-family: "Libre Baskerville", serif;
-            font-style: normal;
-            font-size: 17px;
-            text-align: justify;
-            border-left: 2px solid transparent;
-            border-right: 2px solid transparent;
-            padding-right: 10px;
-        }
 
-        #fontSyzeTitle {
-            font-size: 25px;
-            font-family: "Kanit", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
+#fontSyzeText {
+    font-family: "Roboto", serif;
+    font-style: normal;
+    font-size: 17px;
+    text-align: justify;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    padding-right: 10px;
+}
 
-        table {
-            border-collapse: collapse;
-        }
+#fontSyzeTitle {
+    font-size: 25px;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
-        th {
-            border: 2px solid black;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 25px;
-        }
+table {
+    border-collapse: collapse;
+}
 
-        td {
-            border: 2px solid black;
-            text-align: left;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+th {
+    border: 2px solid black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
 
-        img {
-            display: block;
-            margin: auto;
-            width: 1200px;
-            height: 700px;
-        }
+td {
+    border: 2px solid black;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        body {
-            background: rgb(255, 255, 255);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
+img {
+    display: block;
+    margin: auto;
+    width: 1200px;
+    height: 700px;
+}
 
-        #table-01 {
-            border-left: 10px solid white;
-            border-right: 10px solid white;
-            border-collapse: separate;
-        }
+body {
+    background: rgb(255, 255, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
-        
-        #table-01 th,
-        #table-01 td {
-            color: rgb(0, 0, 0);
-            border: 1px solid rgb(0, 0, 0);
-            padding: 8px;
-            text-align: left;
-        }
+#table-01 {
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-collapse: separate;
+}
 
-        #tableTitle th {
-            color: rgb(0, 0, 0);
-            font-family: "Kanit", serif;
-            font-weight: 400;
-        }
 
-        #whiteText {
-            color: rgb(107, 94, 94);
-        }
+#table-01 th,
+#table-01 td {
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+    text-align: left;
+}
 
-        #pingui {
-            width: 250px;
-            height: 100px;
-            margin: 10px;
-            float: left;
-            border: 2px solid black;
-        }
+#tableTitle th {
+    color: rgb(0, 0, 0);
+    font-family: "Kanit", serif;
+    font-weight: 400;
+}
 
-        #title1 {
-            text-align: left;
-            margin: 0;
-            padding-left: 10px;
-        }
+#whiteText {
+    color: rgb(107, 94, 94);
+}
 
-        .navbar {
-            justify-content: flex-start;
-        }
+#pingui {
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    border: 2px solid black;
+}
 
-        #buttonNavbar {
-            border: 2px solid black;
-        }
+#title1 {
+    text-align: left;
+    margin: 0;
+    padding-left: 10px;
 
-        #card1 {
-            text-align: left;
-            margin: 0 auto;
-            display: block;
-            padding: 20px;
-        }
+}
 
-        #fontSCard1 {
-            font-size: 20px;
-        }
+.navbar {
+    justify-content: flex-start;
+}
 
-        #fontSDescription {
-            font-size: 20px;
-            text-align: justify;
-            padding: 30px;
-        }
+#buttonNavbar {
+    border: 2px solid black;
+}
 
-        #fontSyzeTableElements {
-            font-size: 15px;
-            font-family: "Libre Baskerville", serif;
-            font-style: normal;
-        }
+#card1 {
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    color: #866737;
+}
 
-        #carouselExample {
-            width: 75%;
-            margin: 0 auto;
-            border-left: 1px solid rgb(255, 255, 255);
-            border-right: 1px solid rgb(255, 255, 255);
-            padding: 10px;
-            border: solid black;
-        }
+#fontSCard1 {
+    font-size: 20px;
+}
 
-        .navbar-brand {
-            flex: 11.5;
-            text-align: center;
-            font-family: "Libre Baskerville", serif;
-            font-style: normal;
-            color: solid black;
-            background-color: rgb(255, 255, 255);
-        }
+#fontSDescription {
+    font-size: 20px;
+    text-align: justify;
+    padding: 30px;
+}
 
-        #title01 {
-            font-family: "Kanit", serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 200%;
-        }
+#fontSyzeTableElements {
+    font-size: 15px;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+}
 
-        #mini {
-            font-family: "Libre Baskerville", serif;
-            font-weight: 400;
-            font-style: italic;
-            font-size: 15px;
-        }
+#carouselExample {
+    width: 75%;
+    margin: 0 auto;
+    border-left: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    border: solid black;
+}
 
-        #boton1 {
-            display: block;
-            width: 50%;
-            margin: 0 auto;
-            padding: 15px 30px;
-            text-align: center;
-        }
+.navbar-brand {
+    flex: 11.5;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    color: solid black;
+    background-color: rgb(0, 0, 0);
+}
 
-        #boton1 .btn {
-            color: #fff;
-        }
+#title01 {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: white;
 
-        #boton2 {
-            display: block;
-            width: 170%;
-            padding: 15px 30px;
-        } */
+}
+
+#title02 {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: white;
+}
+
+#mini {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+}
+
+#boton1 {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+#boton1 .btn {
+    color: #fff;
+}
+
+#boton2 {
+    display: block;
+    width: 170%;
+    padding: 15px 30px;
+}
+
+#logos {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+#margenTotal {
+    width: 100%;
+    border-left: 100px solid rgb(0, 0, 0);
+    border-right: 100px solid rgb(0, 0, 0);
+    padding: 10px;
+
+}

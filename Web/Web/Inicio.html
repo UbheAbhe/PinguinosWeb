@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="Styles.css">
 
     <!-- meta tags de compatibilidad con diversas aplicaciones -->
     <meta name="viewport" content="width=device-width" />
@@ -47,215 +48,12 @@
         rel="stylesheet">
     <meta http-equiv="content-language" content="es-mx" />
     <title>Introducción general sobre los pingüinos</title>
-
-    <!-- los # son por los id de cada elementos, miralos tu, no te los pienso indicar -->
-    <style>
-        #fontSyzeText {
-            font-family: "Roboto", serif;
-            font-style: normal;
-            font-size: 17px;
-            text-align: justify;
-            border-left: 2px solid transparent;
-            border-right: 2px solid transparent;
-            padding-right: 10px;
-        }
-
-        #fontSyzeTitle {
-            font-size: 25px;
-            font-family: "Roboto", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        table {
-            border-collapse: collapse;
-        }
-
-        th {
-            border: 2px solid black;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 25px;
-        }
-
-        td {
-            border: 2px solid black;
-            text-align: left;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        img {
-            display: block;
-            margin: auto;
-            width: 1200px;
-            height: 700px;
-        }
-
-        body {
-            background: rgb(255, 255, 255);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        #table-01 {
-            border-left: 10px solid white;
-            border-right: 10px solid white;
-            border-collapse: separate;
-        }
-
-
-        #table-01 th,
-        #table-01 td {
-            color: rgb(0, 0, 0);
-            border: 1px solid rgb(0, 0, 0);
-            padding: 8px;
-            text-align: left;
-        }
-
-        #tableTitle th {
-            color: rgb(0, 0, 0);
-            font-family: "Kanit", serif;
-            font-weight: 400;
-        }
-
-        #whiteText {
-            color: rgb(107, 94, 94);
-        }
-
-        #pingui {
-            width: 250px;
-            height: 100px;
-            margin: 10px;
-            float: left;
-            border: 2px solid black;
-        }
-
-        #title1 {
-            text-align: left;
-            margin: 0;
-            padding-left: 10px;
-
-        }
-
-        .navbar {
-            justify-content: flex-start;
-        }
-
-        #buttonNavbar {
-            border: 2px solid black;
-        }
-
-        #card1 {
-            text-align: left;
-            margin: 0 auto;
-            display: flex;
-            padding: 20px;
-            color: #866737;
-        }
-
-        #fontSCard1 {
-            font-size: 20px;
-        }
-
-        #fontSDescription {
-            font-size: 20px;
-            text-align: justify;
-            padding: 30px;
-        }
-
-        #fontSyzeTableElements {
-            font-size: 15px;
-            font-family: "Libre Baskerville", serif;
-            font-style: normal;
-        }
-
-        #carouselExample {
-            width: 75%;
-            margin: 0 auto;
-            border-left: 1px solid rgb(255, 255, 255);
-            border-right: 1px solid rgb(255, 255, 255);
-            padding: 10px;
-            border: solid black;
-        }
-
-        .navbar-brand {
-            flex: 11.5;
-            text-align: center;
-            font-family: "Libre Baskerville", serif;
-            font-style: normal;
-            color: solid black;
-            background-color: rgb(0, 0, 0);
-        }
-
-        #title01 {
-            font-family: "Roboto", serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 200%;
-            color: white;
-
-        }
-
-        #title02 {
-            font-family: "Roboto", serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 200%;
-            color: white;
-        }
-
-        #mini {
-            font-family: "Libre Baskerville", serif;
-            font-weight: 400;
-            font-style: italic;
-            font-size: 15px;
-        }
-
-        #boton1 {
-            display: block;
-            width: 50%;
-            margin: 0 auto;
-            padding: 15px 30px;
-            text-align: center;
-        }
-
-        #boton1 .btn {
-            color: #fff;
-        }
-
-        #boton2 {
-            display: block;
-            width: 170%;
-            padding: 15px 30px;
-        }
-
-        #logos {
-            width: 70px;
-            height: 70px;
-            margin: 10px;
-            float: left;
-        }
-
-        #margenTotal {
-            width: 100%;
-            border-left: 100px solid rgb(0, 0, 0);
-            border-right: 100px solid rgb(0, 0, 0);
-            padding: 10px;
-
-        }
-    </style>
-    <!-- se intento vincular con el css pero hay algunas cosas que no se quedan igual
-    <link rel="stylesheet" href="css/Styles.css"> -->
-
-
 </head>
 
 <body id="margenTotal">
     <nav class="navbar navbar-expand-lg" style="background-color: #ffd000;" id="navbarcolor">
         <div class="container-fluid d-flex justify-content-start">
-            <img src="https://static.vecteezy.com/system/resources/previews/020/982/267/non_2x/simple-penguin-logo-vector.jpg" class="img" id="pingui">
+            <img src="/Web/imagenes/pingui.png" class="img" id="pingui">
             <a class="navbar-brand"><strong id="title01">Introducción general a los pingüinos</strong></a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -326,7 +124,7 @@
 
     <nav class="navbar navbar-expand-lg" style="background-color: #ffd000;" id="navbarcolor">
         <div class="container-fluid d-flex justify-content-start">
-            <img src="https://static.vecteezy.com/system/resources/previews/020/982/267/non_2x/simple-penguin-logo-vector.jpg" class="img" id="pingui" alt="Pingui">
+            <img src="/Web/imagenes/pingui.png" class="img" id="pingui" alt="Pingui">
             <a href="https://www.facebook.com">
                 <img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" class="img" id="logos" alt="Facebook"
                     style="cursor: pointer;">
